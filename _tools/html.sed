@@ -1,0 +1,2 @@
+s|<script  *type="\([^"][^"]*\)"> *create_menu(\('.*'\)); *</script>|<script type="\1">MyCodeIgniterChrome\.create_menu(\2);</script>|g
+s|<script  *type="\([^"][^"]*\)"> *_setNavigation( *); *</script>|<script type="\1">MyCodeIgniterChrome\._setNavigation();</script>|g

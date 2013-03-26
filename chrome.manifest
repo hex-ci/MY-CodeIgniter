@@ -1,0 +1,7 @@
+content   MyCodeIgniter                 chrome/content/
+skin      MyCodeIgniter   classic/1.0   chrome/skin/
+locale    MyCodeIgniter   zh-CN         chrome/locale/zh-CN/
+
+
+overlay   chrome://browser/content/browser.xul   chrome://MyCodeIgniter/content/ff-overlay.xul
+style chrome://global/content/customizeToolbar.xul chrome://MyCodeIgniter/skin/overlay.css

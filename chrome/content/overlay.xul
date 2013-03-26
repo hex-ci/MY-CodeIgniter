@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<overlay id="MyCodeIgniter-overlay-general" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<menupopup id="ci-main-menu">
+
+<menuitem class="menuitem-iconic" image="chrome://MyCodeIgniter/skin/ci.png" label="CodeIgniter 官方网站" onclick="MyCodeIgniterChrome.openWebpage(event, 'http://codeigniter.com/');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'http://codeigniter.com/');" />
+<menuitem class="menuitem-iconic" image="chrome://MyCodeIgniter/skin/ci.png" label="CodeIgniter 中国" onclick="MyCodeIgniterChrome.openWebpage(event, 'http://codeigniter.org.cn/');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'http://codeigniter.org.cn/');" />
+<menuitem label="下载 CodeIgniter" onclick="MyCodeIgniterChrome.openWebpage(event, 'http://codeigniter.org.cn/downloads');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'http://codeigniter.org.cn/downloads');" />
+
+<menuseparator/>
+
+<menuitem label="用户手册首页" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/index.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/index.html');" />
+<menuitem label="目录" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/toc.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/toc.html');" />
+
+<menuseparator/>
+
+<menu id="basicInfo" label="基本信息">
+	<menupopup>
+		<menuitem label="服务器要求" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/requirements.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/requirements.html');" />
+		<menuitem label="许可协议" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/license.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/license.html');" />
+		<menuitem label="变更记录" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/changelog.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/changelog.html');" />
+		<menuitem label="关于 CodeIgniter" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/credits.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/credits.html');" />
+	</menupopup>
+</menu>
+
+
+<menu id="installation" label="安装">
+	<menupopup>
+		<menuitem label="下载 CodeIgniter" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/downloads.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/downloads.html');" />
+		<menuitem label="安装指导" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/index.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/index.html');" />
+		<!--<menuitem label="从老版本升级" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrading.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrading.html');" />-->
+		<menu id="upgrading" label="从老版本升级">
+		<menupopup>
+			<menuitem label="从 1.7.3 升级到 2.0.0" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_173.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_200.html');" />
+			<menuitem label="从 1.7.2 升级到 1.7.3" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_173.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_173.html');" />
+			<menuitem label="从 1.7.1 升级到 1.7.2" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_172.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_172.html');" />
+			<menuitem label="从 1.7.0 升级到 1.7.1" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_171.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_171.html');" />
+			<menuitem label="从 1.6.3 升级到 1.7.0" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_170.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_170.html');" />
+			<menuitem label="从 1.6.2 升级到 1.6.3" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_163.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_163.html');" />
+			<menuitem label="从 1.6.1 升级到 1.6.2" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_162.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_162.html');" />
+			<menuitem label="从 1.6.0 升级到 1.6.1" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_161.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_161.html');" />
+			<menuitem label="从 1.5.4 升级到 1.6.0" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_160.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_160.html');" />
+			<menuitem label="从 1.5.3 升级到 1.5.4" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_154.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_154.html');" />
+			<menuitem label="从 1.5.2 升级到 1.5.3" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_153.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_153.html');" />
+			<menuitem label="从 1.5.0 或 1.5.1 升级到 1.5.2" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_152.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_152.html');" />
+			<menuitem label="从 1.4.1 升级到 1.5.0" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_150.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_150.html');" />
+			<menuitem label="从 1.4.0 升级到 1.4.1" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_141.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_141.html');" />
+			<menuitem label="从 1.3.3 升级到 1.4.0" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_140.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_140.html');" />
+			<menuitem label="从 1.3.2 升级到 1.3.3" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_133.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_133.html');" />
+			<menuitem label="从 1.3.1 升级到 1.3.2" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_132.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_132.html');" />
+			<menuitem label="从 1.3 升级到 1.3.1" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_131.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_131.html');" />
+			<menuitem label="从 1.2 升级到 1.3" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_130.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_130.html');" />
+			<menuitem label="从 1.1 升级到 1.2" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_120.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_120.html');" />
+			<menuitem label="从 Beta 1.0 升级到 Beta 1.1" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_b11.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/upgrade_b11.html');" />
+		</menupopup>
+		</menu>
+		<menuitem label="疑难解答" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/installation/troubleshooting.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/installation/troubleshooting.html');" />
+	</menupopup>
+</menu>
+
+<menu id="introduction" label="介绍">
+	<menupopup>
+		<menuitem label="开始" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/overview/getting_started.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/overview/getting_started.html');" />
+		<menuitem label="CodeIgniter 是什么？" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/overview/at_a_glance.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/overview/at_a_glance.html');" />
+		<menuitem label="CodeIgniter 速记表" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/overview/cheatsheets.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/overview/cheatsheets.html');" />
+		<menuitem label="支持特性" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/overview/features.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/overview/features.html');" />
+		<menuitem label="应用程序流程图" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/overview/appflow.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/overview/appflow.html');" />
+		<menuitem label="模型-视图-控制器" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/overview/mvc.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/overview/mvc.html');" />
+		<menuitem label="架构目标" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/overview/goals.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/overview/goals.html');" />
+	</menupopup>
+</menu>
+
+<menu id="generalTopics" label="常规主题">
+	<menupopup>
+		<menuitem label="CodeIgniter URL" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/urls.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/urls.html');" />
+		<menuitem label="控制器" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/controllers.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/controllers.html');" />
+		<menuitem label="保留字" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/reserved_names.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/reserved_names.html');" />
+		<menuitem label="视图" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/views.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/views.html');" />
+		<menuitem label="模型" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/models.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/models.html');" />
+		<menuitem label="辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/helpers.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/helpers.html');" />
+		<menuitem label="插件" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/plugins.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/plugins.html');" />
+		<menuitem label="使用 CodeIgniter 类库" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/libraries.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/libraries.html');" />
+		<menuitem label="创建你自己的类库" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/creating_libraries.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/creating_libraries.html');" />
+		<menuitem label="使用 CodeIgniter 适配器" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/drivers.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/drivers.html');" />
+		<menuitem label="创建适配器" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/creating_drivers.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/creating_drivers.html');" />
+		<menuitem label="创建核心类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/core_classes.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/core_classes.html');" />
+		<menuitem label="钩子 - 扩展核心" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/hooks.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/hooks.html');" />
+		<menuitem label="自动装载资源" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/autoloader.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/autoloader.html');" />
+		<menuitem label="公共函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/common_functions.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/common_functions.html');" />
+		<menuitem label="URI 路由" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/routing.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/routing.html');" />
+		<menuitem label="错误处理" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/errors.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/errors.html');" />
+		<menuitem label="缓存" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/caching.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/caching.html');" />
+		<menuitem label="评测你的应用程序" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/profiling.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/profiling.html');" />
+		<menuitem label="管理应用程序" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/managing_apps.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/managing_apps.html');" />
+		<menuitem label="PHP 替代语法" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/alternative_php.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/alternative_php.html');" />
+		<menuitem label="安全" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/security.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/security.html');" />
+		<menuitem label="开发规范" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/general/styleguide.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/general/styleguide.html');" />
+	</menupopup>
+</menu>
+
+<menu id="classReference" label="类库参考">
+	<menupopup>
+		<menuitem label="基准测试类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/benchmark.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/benchmark.html');" />
+		<menuitem label="日历类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/calendar.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/calendar.html');" />
+		<menuitem label="购物车类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/cart.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/cart.html');" />
+		<menuitem label="配置类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/config.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/config.html');" />
+		<menuitem label="Email 类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/email.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/email.html');" />
+		<menuitem label="加密类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/encryption.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/encryption.html');" />
+		<menuitem label="文件上传类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/file_uploading.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/file_uploading.html');" />
+		<menuitem label="表单验证类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/form_validation.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/form_validation.html');" />
+		<menuitem label="FTP 类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/ftp.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/ftp.html');" />
+		<menuitem label="HTML 表格类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/table.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/table.html');" />
+		<menuitem label="图像处理类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/image_lib.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/image_lib.html');" />
+		<menuitem label="输入类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/input.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/input.html');" />
+		<menuitem label="装载器类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/loader.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/loader.html');" />
+		<menuitem label="语言类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/language.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/language.html');" />
+		<menuitem label="输出类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/output.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/output.html');" />
+		<menuitem label="分页类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/pagination.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/pagination.html');" />
+		<menuitem label="安全类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/security.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/security.html');" />
+		<menuitem label="Session 类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/sessions.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/sessions.html');" />
+		<menuitem label="Trackback 类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/trackback.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/trackback.html');" />
+		<menuitem label="模板解析器类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/parser.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/parser.html');" />
+		<menuitem label="排版类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/typography.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/typography.html');" />
+		<menuitem label="单元测试类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/unit_testing.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/unit_testing.html');" />
+		<menuitem label="URI 类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/uri.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/uri.html');" />
+		<menuitem label="User-Agent 类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/user_agent.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/user_agent.html');" />
+		<menuitem label="XML-RPC 类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/xmlrpc.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/xmlrpc.html');" />
+		<menuitem label="Zip 编码类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/zip.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/zip.html');" />
+	</menupopup>
+</menu>
+
+<menu id="driverReference" label="适配器参考">
+	<menupopup>
+		<menuitem label="缓存类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/drivers/caching.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/drivers/caching.html');" />
+		<menuitem label="Javascript 类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/libraries/javascript.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/libraries/javascript.html');" />
+		<menu id="databaseClassReference" label="数据库类">
+		<menupopup>
+			<menuitem label="数据库配置" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/configuration.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/configuration.html');" />
+			<menuitem label="入门：用法举例" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/examples.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/examples.html');" />
+			<menuitem label="连接数据库" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/connecting.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/connecting.html');" />
+			<menuitem label="查询" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/queries.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/queries.html');" />
+			<menuitem label="生成查询结果" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/results.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/results.html');" />
+			<menuitem label="查询辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/helpers.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/helpers.html');" />
+			<menuitem label="Active Record 类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/active_record.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/active_record.html');" />
+			<menuitem label="事务" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/transactions.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/transactions.html');" />
+			<menuitem label="表格元数据" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/table_data.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/table_data.html');" />
+			<menuitem label="字段元数据" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/fields.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/fields.html');" />
+			<menuitem label="自定义函数调用" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/call_function.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/call_function.html');" />
+			<menuitem label="查询缓存" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/caching.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/caching.html');" />
+			<menuitem label="数据库维护类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/forge.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/forge.html');" />
+			<menuitem label="数据库工具类" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/database/utilities.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/database/utilities.html');" />
+		</menupopup>
+		</menu>
+	</menupopup>
+</menu>
+
+<menu id="helperReference" label="辅助函数参考">
+	<menupopup>
+		<menuitem label="数组辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/array_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/array_helper.html');" />
+		<menuitem label="CAPTCHA 辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/captcha_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/captcha_helper.html');" />
+		<menuitem label="Cookie 辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/cookie_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/cookie_helper.html');" />
+		<menuitem label="日期辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/date_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/date_helper.html');" />
+		<menuitem label="目录辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/directory_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/directory_helper.html');" />
+		<menuitem label="下载辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/download_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/download_helper.html');" />
+		<menuitem label="Email 辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/email_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/email_helper.html');" />
+		<menuitem label="文件辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/file_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/file_helper.html');" />
+		<menuitem label="表单辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/form_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/form_helper.html');" />
+		<menuitem label="HTML 辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/html_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/html_helper.html');" />
+		<menuitem label="Inflector 辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/inflector_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/inflector_helper.html');" />
+		<menuitem label="语言辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/language_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/language_helper.html');" />
+		<menuitem label="数字辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/number_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/number_helper.html');" />
+		<menuitem label="路径辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/path_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/path_helper.html');" />
+		<menuitem label="安全辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/security_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/security_helper.html');" />
+		<menuitem label="表情辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/smiley_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/smiley_helper.html');" />
+		<menuitem label="字符串辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/string_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/string_helper.html');" />
+		<menuitem label="文本辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/text_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/text_helper.html');" />
+		<menuitem label="排版辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/typography_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/typography_helper.html');" />
+		<menuitem label="URL 辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/url_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/url_helper.html');" />
+		<menuitem label="XML 辅助函数" onclick="MyCodeIgniterChrome.openWebpage(event, 'chrome://MyCodeIgniter/content/user_guide/helpers/xml_helper.html');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'chrome://MyCodeIgniter/content/user_guide/helpers/xml_helper.html');" />
+	</menupopup>
+</menu>
+
+<menuseparator/>
+
+<menuitem label="搜索引擎" onclick="MyCodeIgniterChrome.openWebpage(event, 'http://search.codeigniter.org.cn/');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'http://search.codeigniter.org.cn/');" />
+<menuitem label="中文社区" onclick="MyCodeIgniterChrome.openWebpage(event, 'http://codeigniter.org.cn/forums/');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'http://codeigniter.org.cn/forums/');" />
+<menuitem label="英文社区" onclick="MyCodeIgniterChrome.openWebpage(event, 'http://codeigniter.com/forums/');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'http://codeigniter.com/forums/');" />
+<menuitem label="社区 Wiki" onclick="MyCodeIgniterChrome.openWebpage(event, 'http://codeigniter.com/wiki/');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'http://codeigniter.com/wiki/');" />
+
+<menuseparator/>
+
+<menuitem label="关于" onclick="MyCodeIgniterChrome.openWebpage(event, 'http://codeigniter.org.cn/');" oncommand="MyCodeIgniterChrome.openWebpage(null, 'http://codeigniter.org.cn/');" />
+
+</menupopup>
+
+</overlay>
